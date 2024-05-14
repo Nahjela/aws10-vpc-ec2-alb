@@ -7,4 +7,22 @@ pipeline{
             }
         }
     }
+    stage('validate'){
+            steps{
+                sh 'terraform init -no-color'
+            }
+        }
+    }
+     stage('format'){
+            steps{
+                sh 'terraform init -no-color'
+            }
+        }
+    }
+     stage('plan'){
+            steps{
+                sh 'terraform init -no-color'
+            }
+        }
+    }
 }
